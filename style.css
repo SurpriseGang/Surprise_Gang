@@ -1,0 +1,197 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Background with Musical Elements */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #111);
+    z-index: -1;
+    animation: backgroundAnim 10s infinite alternate;
+}
+
+@keyframes backgroundAnim {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 3em;
+    color: gold;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.intro {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #fff;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+    }
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.about-section h2 {
+    color: gold;
+    font-size: 2.5em;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+/* Members Section */
+.members-section {
+    padding: 50px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.members-section h2 {
+    color: gold;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    color: gold;
+    font-size: 1.8em;
+}
+
+.card-info p {
+    color: #ccc;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+}
+
+/* Individual Card Glows */
+.raidey {
+    box-shadow: 0 0 15px rgba(255, 223, 0, 0.3);
+}
+
+.raidey:hover {
+    box-shadow: 0 0 30px rgba(255, 223, 0, 0.8);
+}
+
+.joagu {
+    box-shadow: 0 0 15px rgba(0, 183, 255, 0.3);
+}
+
+.joagu:hover {
+    box-shadow: 0 0 30px rgba(0, 183, 255, 0.8);
+}
+
+.panda {
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+.panda:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.social-media h2 {
+    color: gold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.icons {
+    font-size: 2em;
+}
+
+.icons a {
+    margin: 0 15px;
+    color: gold;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #ccc;
+}
+
